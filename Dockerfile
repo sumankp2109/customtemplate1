@@ -1,0 +1,10 @@
+FROM ubunt/apache2
+LABEL "SUBJECT"="APPS DEPLOYMENT FOR KUBERNETES"
+LABEL "SUBJET"="CONTAINERIZED APPS FOR DOCKER"
+RUN apt-get update
+RUN apt-get upgrade
+WORKDIR /var/www/html
+COPY . /var/www/html
+MAINTAINER SKY
+
+
